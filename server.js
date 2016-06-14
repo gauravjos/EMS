@@ -10,7 +10,7 @@ var express = require('express'),
 	mongoose = require('mongoose');
 
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 
 app.use(morgan('dev'));
 //app.use(bodyParser.json());
