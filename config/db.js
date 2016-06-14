@@ -1,3 +1,5 @@
+var db_url = process.env.DBURL || 'localhost';
+
 module.exports = {
-	url : 'mongodb://localhost/ems_master'
+	url : 'mongodb://'+ db_url +'/ems_master'
 }
