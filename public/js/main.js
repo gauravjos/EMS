@@ -34,7 +34,11 @@ angular.module('MainCtrl', [])
 			$scope.employees = response;	
 			console.log($scope);
 		});	
+		$scope.ip = $http.get("/ip").success(function(response){
+			$scope.ip = response;
+		});
 	};
+
 	var resetControls = function(){
 			$scope.employee.id = "";
 			$scope.employee.name = "";
